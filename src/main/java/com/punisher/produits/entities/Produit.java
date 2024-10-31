@@ -15,6 +15,12 @@ public class Produit {
 	private Double prixProduit;
 	private Date dateCreation;
 	
+	
+	
+	
+	@ManyToOne()
+	private Categorie categorie;
+	
 		
 	
 	public Produit() {
@@ -31,6 +37,15 @@ public class Produit {
 		this.dateCreation = dateCreation;
 	}
 
+	public Categorie getCategorie() {
+		return categorie;
+	}
+	
+	
+	
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
 
 
 
